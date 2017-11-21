@@ -10,7 +10,7 @@ pipeline {
       steps {
         echo 'testing create pipeline'
         git(url: 'https://gitlabin.bajau.com/aasmarani/reflex.git', credentialsId: 'gitlabcred')
-        libraryResource 'library-bajau'
+        libraryResource 'bajau-library'
       }
     }
     stage('Testing') {
