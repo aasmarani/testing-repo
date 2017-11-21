@@ -10,7 +10,7 @@ pipeline {
       steps {
         echo 'testing create pipeline'
         git(url: 'https://gitlabin.bajau.com/aasmarani/reflex.git', credentialsId: 'gitlabcred')
-        tool(name: 'sudocker', type: 'docker')
+        tool(name: 'SUDocker', type: 'docker')
         libraryResource 'library-bajau'
       }
     }
